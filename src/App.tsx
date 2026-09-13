@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { ExploreTechnologies } from './components/ExploreTechnologies';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <ExploreTechnologies />
+      <Footer />
 
 
       <ToastContainer 
