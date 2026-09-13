@@ -7,7 +7,6 @@ export const Footer: React.FC = () => {
         
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 mb-16 text-center lg:text-left">
-          
 
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
             <div className="flex items-center gap-2.5 mb-4">
@@ -30,9 +29,6 @@ export const Footer: React.FC = () => {
               <a href="#linkedin" className="hover:text-[#DB2777] transition-colors">LinkedIn</a>
             </div>
           </div>
-
-
-          
   
           <div className="hidden lg:flex flex-col items-start">
             <h4 className="font-inter font-bold text-xs uppercase tracking-wider text-gray-900 mb-4">
@@ -45,7 +41,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-
           <div className="hidden lg:flex flex-col items-start">
             <h4 className="font-inter font-bold text-xs uppercase tracking-wider text-gray-900 mb-4">
               Company
@@ -56,7 +51,6 @@ export const Footer: React.FC = () => {
               <li><a href="#careers" className="hover:text-[#DB2777] transition-colors">Careers</a></li>
             </ul>
           </div>
-
 
           <div className="hidden lg:flex flex-col items-start">
             <h4 className="font-inter font-bold text-xs uppercase tracking-wider text-gray-900 mb-4">
@@ -69,7 +63,6 @@ export const Footer: React.FC = () => {
           </div>
 
         </div>
-
 
         <div className="pt-8 border-t border-gray-100 flex flex-row items-center justify-between gap-4 font-jakarta text-xs text-gray-500 text-left">
           <p>© 2026 Dev Stack. All rights reserved.</p>

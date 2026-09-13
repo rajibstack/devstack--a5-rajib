@@ -19,26 +19,24 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm w-full">
-      <div className="max-w-[1216px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-[1216px] mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between h-16">
           
-
           <div className="flex items-center md:hidden z-10">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="text-gray-700 hover:text-black focus:outline-none"
+              className="text-gray-700 hover:text-black focus:outline-none p-1"
             >
-              {isOpen ? <X size={26} /> : <Menu size={26} />}
+              {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
 
-
           <div className="flex items-center cursor-pointer absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-r from-[#EC4899] to-[#7C3AED] flex items-center justify-center text-white font-jakarta font-black text-sm shadow-sm">
+            <div className="flex items-center gap-1.5 sm:gap-2.5 cursor-pointer">
+              <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-gradient-to-r from-[#EC4899] to-[#7C3AED] flex items-center justify-center text-white font-jakarta font-black text-[11px] sm:text-sm shadow-sm">
                 DS
               </div>
-              <span className="font-jakarta text-lg font-bold tracking-tight">
+              <span className="font-jakarta text-sm sm:text-lg font-bold tracking-tight">
                 <span className="text-[#0F172A]">Dev</span>
                 <span className="text-[#DB2777]"> Stack</span>
               </span>
@@ -61,11 +59,11 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-3">
-            <button className="text-xs sm:text-sm font-medium text-[#334155] hover:text-[#DB2777] transition-colors whitespace-nowrap px-1 sm:px-2">
+          <div className="flex items-center gap-1 sm:gap-3 z-10">
+            <button className="text-[11px] sm:text-sm font-medium text-[#334155] hover:text-[#DB2777] transition-colors whitespace-nowrap px-1 sm:px-2">
               Sign In
             </button>
-            <button className="bg-[#D91B7E] hover:bg-[#0F172A] text-white text-xs sm:text-sm font-medium px-3 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm transition-all whitespace-nowrap">
+            <button className="bg-[#D91B7E] hover:bg-[#0F172A] text-white text-[11px] sm:text-sm font-medium px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm transition-all whitespace-nowrap">
               Sign Up
             </button>
           </div>
@@ -87,6 +85,11 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
+          <div className="pt-2 border-t border-gray-100 flex flex-col gap-2">
+            <button className="w-full text-center py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">
+              Sign In
+            </button>
+          </div>
         </div>
       )}
     </nav>
